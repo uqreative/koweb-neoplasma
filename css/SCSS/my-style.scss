@@ -1,0 +1,200 @@
+// .section-header {
+// 	margin-top: 80px;
+
+// 	.image-about-us {
+// 		background-image: url("../../images/top-about-us_company-overview.jpg");
+// 		background-repeat: no-repeat;
+// 		background-size: cover;
+// 		// width: 100%;
+// 		height: 100%;
+// 		padding: 200px 200px;
+
+// 		h5 {
+// 			text-align: center;
+// 			color: #ffffff;
+// 			font-weight: 300;
+// 		}
+
+// 		h4 {
+// 			text-align: center;
+// 			color: #ffffff;
+// 			font-size: 36px;
+// 		}
+
+// 	}
+.section-header {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	margin-top: 80px;
+
+	img {
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.banner-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		h4 {
+			font-size: 26px;
+		}
+	}
+}
+
+// about 01
+.section-tab {
+	.hr-custom {
+		color: #a1a1a1;
+	}
+
+	.tab-content {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 25px;
+		/* Membuat tiga kolom dengan lebar yang sama */
+		// gap: 2px;
+
+		.item {
+			border-right: 1px solid #B1B1B1;
+			padding: 2px;
+			text-align: center;
+		}
+
+	}
+}
+
+.section-company-overview {
+	.my-table {
+		td {
+			padding: 30px;
+		}
+
+		.green-td {
+			background-color: #E1EFED;
+		}
+	}
+}
+
+.section-history {
+	.number-my {
+		color: #515151;
+		font-size: 14px;
+	}
+
+	h6 {
+		color: #1B1B1B;
+		font-size: 14px;
+	}
+}
+
+// about 02
+.section-member-introduction {
+	img {
+		max-width: 250px;
+		max-height: 320px;
+	}
+
+	.container-introduction {
+		background-color: #EAF2F1;
+		border-radius: 5px;
+		padding: 20px 30px;
+		margin-top: 30px;
+
+		ul {
+			li {
+				color: #515151;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+
+// about 03
+.section-way-come {
+	.table-address {
+		width: 100%;
+
+		th,
+		td {
+			padding: 20px;
+		}
+
+		td {
+			color: #515151;
+			font-size: 14px;
+		}
+
+		th {
+			font-size: 16px;
+			color: #515151;
+		}
+	}
+}
+
+// online inquiry
+.section-online-inquiry {
+	.my-button {
+		background-color: #359084;
+		border-radius: 5px;
+		color: #E1EFED;
+		padding: 10px 30px;
+	}
+}
+
+.my-form {
+	border: none;
+
+	&:focus {
+		box-shadow: none;
+	}
+
+	&::placeholder {
+		color: #adadad;
+		font-size: 14px;
+	}
+
+}
+
+
+// custom margin
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-25 {
+	margin-top: 25px;
+}
+
+.mt-45 {
+	margin-top: 45px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-85 {
+	margin-top: 85px;
+}
+
+.mt-100 {
+	margin-top: 100px;
+}
+
+.mt-145 {
+	margin-top: 145px;
+}

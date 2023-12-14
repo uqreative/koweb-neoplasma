@@ -1,0 +1,136 @@
+.section-header {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+.section-header img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-header .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-header .banner-text h4 {
+  font-size: 26px;
+}
+
+.section-tab .hr-custom {
+  color: #a1a1a1;
+}
+.section-tab .tab-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 25px;
+  /* Membuat tiga kolom dengan lebar yang sama */
+}
+.section-tab .tab-content .item {
+  border-right: 1px solid #B1B1B1;
+  padding: 2px;
+  text-align: center;
+}
+
+.section-company-overview .my-table td {
+  padding: 30px;
+}
+.section-company-overview .my-table .green-td {
+  background-color: #E1EFED;
+}
+
+.section-history .number-my {
+  color: #515151;
+  font-size: 14px;
+}
+.section-history h6 {
+  color: #1B1B1B;
+  font-size: 14px;
+}
+
+.section-member-introduction img {
+  max-width: 250px;
+  max-height: 320px;
+}
+.section-member-introduction .container-introduction {
+  background-color: #EAF2F1;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+.section-member-introduction .container-introduction ul li {
+  color: #515151;
+  margin-top: 20px;
+}
+
+.section-way-come .table-address {
+  width: 100%;
+}
+.section-way-come .table-address th,
+.section-way-come .table-address td {
+  padding: 20px;
+}
+.section-way-come .table-address td {
+  color: #515151;
+  font-size: 14px;
+}
+.section-way-come .table-address th {
+  font-size: 16px;
+  color: #515151;
+}
+
+.section-online-inquiry .my-button {
+  background-color: #359084;
+  border-radius: 5px;
+  color: #E1EFED;
+  padding: 10px 30px;
+}
+
+.my-form {
+  border: none;
+}
+.my-form:focus {
+  box-shadow: none;
+}
+.my-form::placeholder {
+  color: #adadad;
+  font-size: 14px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-85 {
+  margin-top: 85px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-145 {
+  margin-top: 145px;
+}/*# sourceMappingURL=my-style.css.map */
