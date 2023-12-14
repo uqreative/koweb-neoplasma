@@ -135,6 +135,103 @@ footer {
     text-align: center;
 }
 
+.banner-top {
+    width: 100%;
+    height: 600px;
+    padding-bottom: 13em;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.banner-top.business-introduction {
+    background-image: url(/images/top-image_businessIntroduction.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-navigasi {
+    height: 81px ;
+    border-bottom: 1px solid #E2E2E2;
+    
+}
+.section-navigasi .vr {
+    height: 100px;
+}
+.section-navigasi .nav-item .nav-link {
+    padding:   0 70px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 400;
+}
+.section-navigasi .nav-item {
+    border-right: 1px solid #B1B1B1;
+}
+.section-navigasi .nav-item:last-child {
+    border-right : none;
+}
+
+main.container-konten {
+    margin-top: 78px;
+}
+main.container-konten .tittle-konten h3 {
+    margin-top: 26px;
+}
+main.container-konten .tittle-konten h5 {
+    margin-top: 26px;
+}
+
+main.container-konten .green-kontener {
+    margin-top: 97px;
+    background-color: #359084;
+    background-image: url(/images/background-businessIntroduction_green-box01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 35px 0;
+    border-radius: 5px;
+    color: white;
+    
+}
+#reoperationRate-container .green-kontener.small {
+    margin-top: 33px;
+    width: 100%;
+    background-color: #359084;
+    background-image: url(/images/background-businessIntroduction_green-box02.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 35px 0;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+table.patient-table p {
+    text-align: end;
+    caption-side: top;
+}
+
+#reoperationRate-container {
+    width: 100%;
+    height: 100%;
+}
+#reoperationRate-container h2 {
+    font-size: 40px;
+}
+#reoperationRate-container #item-cek {
+    margin-top: 26px;
+}
+#reoperationRate-container #item-cek div  {
+    margin-right: 16px;
+}
+#reoperationRate-container ul {
+    font-size: 20px; padding-left: 88px; margin-top: 18px;
+}
 
 /* =============================================================================================== 
      Responsive Section
