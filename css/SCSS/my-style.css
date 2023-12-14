@@ -24,7 +24,7 @@
 }
 .section-tab .tab-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 25px;
   /* Membuat tiga kolom dengan lebar yang sama */
 }
@@ -97,6 +97,18 @@
 .my-form::placeholder {
   color: #adadad;
   font-size: 14px;
+}
+
+.section-business-introduction .bottom-introduction h5 {
+  font-size: 14px;
+}
+.section-business-introduction .bottom-introduction .container-introduction-product {
+  padding: 30px;
+  background-color: #EFF7F6;
+  border-radius: 10px;
+}
+.section-business-introduction .bottom-introduction .container-introduction-product img {
+  max-width: 64px;
 }
 
 .mt-10 {

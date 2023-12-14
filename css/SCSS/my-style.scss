@@ -54,7 +54,7 @@
 
 	.tab-content {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 25px;
 		/* Membuat tiga kolom dengan lebar yang sama */
 		// gap: 2px;
@@ -161,6 +161,28 @@
 
 }
 
+
+// business introduction
+
+.section-business-introduction {
+	.bottom-introduction {
+		h5 {
+			font-size: 14px;
+		}
+
+		.container-introduction-product {
+			padding: 30px;
+			background-color: #EFF7F6;
+			border-radius: 10px;
+
+			img {
+				max-width: 64px;
+			}
+
+		}
+
+	}
+}
 
 // custom margin
 .mt-10 {

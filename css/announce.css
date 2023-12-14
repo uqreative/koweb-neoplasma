@@ -1,0 +1,100 @@
+.text-buat-nibanin-bawaan-koweb-16 {
+    font-size: 16px !important;
+}
+.text-buat-nibanin-bawaan-koweb-20 {
+    font-size: 20px !important;
+}
+.text-buat-nibanin-bawaan-koweb-21 {
+    font-size: 21px !important;
+}
+#footer-kaki{
+    padding-top: 50px; padding-bottom: 40px;
+}
+#kontainer-navbar {
+    padding: 14px 0 14px 0;
+}
+#item-menu-kontener .btn {
+    color: white;
+}
+#nav-menu-item-atas li a {
+    margin: 0 36px 0 36px; 
+    color: #ffffff8c;
+}
+#nav-menu-item-atas li a.active {
+    color: #fff;
+}
+#footer-kaki .container hr{
+    margin: 16px 0;
+}
+#name-company p {
+    margin-left: 16px;
+}
+#alamat-company {
+    margin-top: 16px;
+}
+#alamat-company p:last-child {
+    margin-left: 16px;
+}
+#kontak-company {
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+#kontak-company div {
+    margin-right: 16px;
+}
+#kontak-company div p:last-child {
+    margin-left: 6px;
+}
+#seksi-perjanjian-pelanggan div a {
+    margin-right: 46px;
+}
+.mobile-menu-tombol {
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 12px;
+}
+
+select#searchType_ {
+    font-size: 16rem;
+}
+
+select#searchType {
+    font-size: 16rem;
+}
+
+input#keyword {
+    font-size: 16rem;
+}
+
+.pagination .btn_first {
+    font-size: 16rem;
+}
+.pagination .btn_last {
+    font-size: 16rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .gnb_area .navbar {
+        padding: 14px 14px;
+    }
+
+    .gnb_area .navbar #kontainer-navbar {
+        padding: 0;
+    }
+    .gnb_area .navbar #kontainer-navbar #item-menu-kontener {
+        
+    }
+    .gnb_area .navbar #kontainer-navbar #item-menu-kontener #nav-menu-item-atas li a  {
+        margin: 0;
+    }
+    
+    #item-menu-kontener ul li {
+        padding: 0px 8px;
+    }
+    #seksi-perjanjian-pelanggan div a {
+        margin-right: 0;
+    }
+}
