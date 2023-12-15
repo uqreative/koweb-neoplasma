@@ -28,35 +28,32 @@
 			<!-- navbar top -->
 			<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
 				<div class="container">
-					<a class="navbar-brand" href="http://neoplasma.koweb.co.kr/">
+					<a class="navbar-brand" href="/index.html">
 						<img src="./images/logo-neoplasma-color_navbar.png" alt="Bootstrap" height="56">
 					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+						aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="navbarText">
+					<div class="collapse navbar-collapse" id="navbarTop">
 						<ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link text-end text-lg-start active " aria-current="page"
+							<li class="nav-item active">
+								<a class="nav-link text-end text-lg-start" aria-current="page"
 									href="/about-01.html">회사소개</a>
 							</li>
-							<li class="nav-item text-end text-lg-start ms-lg-4">
+							<li class="nav-item text-end text-lg-start">
 								<a class="nav-link" href="/business-introduction.html">사업소개</a>
 							</li>
-							<li class="nav-item text-end text-lg-start ms-lg-4">
-								<a class="nav-link" href="/business-introduction-04.html">제품소개</a>
-							</li>
-							<li class="nav-item text-end text-lg-start  ms-lg-4">
+							<li class="nav-item text-end text-lg-start">
 								<a class="nav-link" href="/online-inquiry.html">온라인 문의</a>
 							</li>
-							<li class="nav-item text-end text-lg-start  ms-lg-4">
+							<li class="nav-item text-end text-lg-start">
 								<a class="nav-link" href="/board.html">고객센터</a>
 							</li>
 						</ul>
 						<button class="btn btn-outline-secondary btn-offcanvas d-none d-lg-block" type="button"
 							data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-							<i class="ri-menu-line ri-lg"></i>
+							<i class="ri-menu-line ri-2x"></i>
 						</button>
 					</div>
 				</div>
@@ -73,14 +70,14 @@
 			<div class="offcanvas-body">
 				<ul class="nav flex-column">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="/about-01.html">회사소개</a>
+						<a clzass="nav-link active" aria-current="page" href="/about-01.html">회사소개</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/business-introduction.html">사업소개</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="/business-introduction-04.html">제품소개</a>
-					</li>
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link" href="/online-inquiry.html">온라인 문의</a>
 					</li>
@@ -96,28 +93,40 @@
 		<div class="section-header">
 			<img src="images/top-about-us_company-overview.jpg" alt="Header Banner">
 			<div class="banner-text">
-				<h5 class="h5">About us</h5>
-				<h4>회사소개</h4>
+				<h5 class="h5 page-sub-tittle size">About us</h5>
+				<h4 class="page-tittle size">회사소개</h4>
 			</div>
 		</div>
 
-		<div class="section-tab text-center mt-5">
+		<!-- <div class="section-tab text-center mt-5">
 			<div class="container tab-content">
 				<div class="item"><a href="/about-01.html">회사개요</a> </div>
 				<div class="item"><a href="/about-02.html">구성원 소개</a></div>
 				<div class="item"><a href="/about-03.html">오시는 길</a></div>
 			</div>
 			<hr class="hr-custom">
-		</div>
+		</div> -->
+
+		<ul class="nav section-navigasi justify-content-center align-items-center">
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="/about-01.html">회사개요</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="/about-02.html">구성원 소개</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="/about-03.html">오시는 길</a>
+			</li>
+		</ul>
 
 		<div class="section-member-introduction mt-100">
 			<div class="container">
 				<div class="row justify-content-center text-center">
 					<div class="col-12">
-						<p>Member Introduction</p>
+						<p class="page-sub-tittle size">Member Introduction</p>
 					</div>
 					<div class="col-12">
-						<h3>구성원 소개</h3>
+						<h3 class="page-tittle size">구성원 소개</h3>
 					</div>
 				</div>
 
@@ -131,127 +140,83 @@
 
 						<div class="container-introduction text-start">
 							<ul>
-								<li>대학 물리치료과 초빙
-									강사, 임상경력 15년,
-									Karoplatic 학회 정회원
-								</li>
-								<li>병원 물리치료, 대학
-									초빙 강사</li>
+								<li>대학 물리치료과 초빙 강사, 임상경력 15년, Karoplatic 학회 정회원</li>
+								<li>병원 물리치료, 대학 초빙 강사</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6 col-lg-4 text-center mt-145">
 						<img src="images/member-introduction/2.jpg" alt="1" class="img-fluid w-75">
 						<div class="text-center mt-3">
-							<h5 class="h5">SEO Jin
-								Seok</h5>
-							<h6 class="h6">Technical
-								Support</h6>
+							<h5 class="h5">SEO Jin Seok</h5>
+							<h6 class="h6">Technical Support</h6>
 						</div>
 
 						<div class="container-introduction text-start">
 							<ul>
-								<li>
-									대학 물리치료과 초빙
-									강사, 임상경력 15년,
-									Karoplatic 학회 정회원
-								</li>
-								<li>
-									병원 물리치료, 대학
-									초빙 강사
-								</li>
+								<li>연구소 연구원, 반도체 장비 개발/영업 (10년)</li>
+								<li>진공 대기압 Plasma 장비 개발 (3년)</li>
+								<li>2009, 해외(중국) Display 장비 수주 1,000억 Projet 달성</li>
+								<li>2011, S社 Flexible OLED 최초 양산 장비 개발 Project 참여</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6 col-lg-4 text-center mt-145">
 						<img src="images/member-introduction/3.jpg" alt="1" class="img-fluid w-75">
 						<div class="text-center mt-3">
-							<h5 class="h5">
-								Park
-								Hong
-								Bo
-							</h5>
-							<h6 class="h6">Marketing Sales</h6>
+							<h5 class="h5">JUNG Y** G**</h5>
+							<h6 class="h6">Soft Engineering</h6>
 						</div>
 
 						<div class="container-introduction text-start">
 							<ul>
-								<li>
-									대학 물리치료과 초빙
-									강사, 임상경력 15년,
-									Karoplatic 학회 정회원
-								</li>
-								<li>
-									병원 물리치료, 대학
-									초빙 강사
-								</li>
+								<li>전자공학 전공, 반도체/Display Program 엔지니어 (10년)</li>
+								<li>제어 프로그래밍 & 장비 제작 담당</li>
+								<li>2018, Apple iphone-11,12 양산 장비 개발 Project 참여</li>
 							</ul>
 						</div>
 					</div>
 
 					<div class="col-sm-6 col-lg-4 text-center mt-145">
-						<img src="images/member-introduction/1.jpg" alt="1" class="img-fluid w-75">
+						<img src="images/member-introduction/4.jpg" alt="1" class="img-fluid w-75">
 						<div class="text-center mt-3">
-							<h5 class="h5">SEO GI Seok</h5>
-							<h6 class="h6">CEO</h6>
+							<h5 class="h5">Park * *</h5>
+							<h6 class="h6">Engineering/Mechanical</h6>
 						</div>
 
 						<div class="container-introduction text-start">
 							<ul>
-								<li>대학 물리치료과 초빙
-									강사, 임상경력 15년,
-									Karoplatic 학회 정회원
-								</li>
-								<li>병원 물리치료, 대학
-									초빙 강사</li>
+								<li>기계공학 학사, 첨단기기 의료기기 분야</li>
+								<li>제품 설계 제조 (15년)</li>
+								<li>2010, RF Plasma Head 국산화 양산 성공</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6 col-lg-4 text-center mt-145">
-						<img src="images/member-introduction/2.jpg" alt="1" class="img-fluid w-75">
+						<img src="images/member-introduction/5.jpg" alt="1" class="img-fluid w-75">
 						<div class="text-center mt-3">
-							<h5 class="h5">SEO Jin
-								Seok</h5>
-							<h6 class="h6">Technical
-								Support</h6>
+							<h5 class="h5">Park Hong Bo</h5>
+							<h6 class="h6">Marketing/Sales</h6>
 						</div>
 
 						<div class="container-introduction text-start">
 							<ul>
-								<li>
-									대학 물리치료과 초빙
-									강사, 임상경력 15년,
-									Karoplatic 학회 정회원
-								</li>
-								<li>
-									병원 물리치료, 대학
-									초빙 강사
-								</li>
+								<li>물리 치료학 학사, 의료기기 분야 영업 경력 (15년)</li>
+								<li>해외 의료기 수출입경력 (10년)</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-sm-6 col-lg-4 text-center mt-145">
-						<img src="images/member-introduction/3.jpg" alt="1" class="img-fluid w-75">
+						<img src="images/member-introduction/6.jpg" alt="1" class="img-fluid w-75">
 						<div class="text-center mt-3">
-							<h5 class="h5">
-								Park
-								Hong
-								Bo
-							</h5>
-							<h6 class="h6">Marketing Sales</h6>
+							<h5 class="h5">Dr. Jeon Jae Hun</h5>
+							<h6 class="h6">Dental Advisor</h6>
 						</div>
 
 						<div class="container-introduction text-start">
 							<ul>
-								<li>
-									대학 물리치료과 초빙
-									강사, 임상경력 15년,
-									Karoplatic 학회 정회원
-								</li>
-								<li>
-									병원 물리치료, 대학
-									초빙 강사
-								</li>
+								<li>대학 치과대학 치의학 박사</li>
+								<li>임플란트 관련 의학 자문</li>
 							</ul>
 						</div>
 					</div>
@@ -272,24 +237,24 @@
 				</div>
 				<div class="col-lg-9">
 					<div class="d-flex flex-column flex-lg-row gap-1 gap-lg-4 text-center text-lg-start">
-						<p>㈜네오플라즈마</p>
-						<p>대표 서기석</p>
-						<a href="tel:+2528602904">사업자번호 252-86-02904</a>
+						<p><b>㈜네오플라즈마</b></p>
+						<p><b>대표</b> 서기석</p>
+						<p><b>사업자번호</b> 252-86-02904</p>
 					</div>
 					<hr class="my-4 my-lg-3">
 					<div class="row">
 						<div class="col-lg-6">
-							<p class="text-center text-lg-start">주소 대구광역시 북구 호암로 51, 3층 ㈜네오플라즈마 </p>
+							<p class="text-center text-lg-start"><b>주소</b> 대구광역시 북구 호암로 51, 3층 ㈜네오플라즈마 </p>
 						</div>
 						<div class="col-lg-6">
 							<div class="d-flex flex-column flex-lg-row contact gap-3 ">
 								<div class="d-flex gap-2 justify-content-center justify-content-lg-start">
 									<span>Tel</span>
-									<p class="mb-0">010-0000-0000</p>
+									<p class="mb-0">010-5533-2462</p>
 								</div>
 								<div class="d-flex gap-2 justify-content-center justify-content-lg-start">
 									<span>Email</span>
-									<p class="mb-0">abcdef@naver.com</p>
+									<p class="mb-0">loveappar@naver.com</p>
 								</div>
 							</div>
 						</div>

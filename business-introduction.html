@@ -16,8 +16,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="/css/ccbr.css">
-	<link rel="stylesheet" href="/css/design-style.css">
 	<link rel="stylesheet" href="/css/SCSS/my-style.css">
+	<link rel="stylesheet" href="/css/design-style.css">
 </head>
 
 <body>
@@ -25,35 +25,32 @@
 
 		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
 			<div class="container">
-				<a class="navbar-brand" href="http://neoplasma.koweb.co.kr/">
+				<a class="navbar-brand" href="/index.html">
 					<img src="./images/logo-neoplasma-color_navbar.png" alt="Bootstrap" height="56">
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-					aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+					aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
+				<div class="collapse navbar-collapse" id="navbarTop">
 					<ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link text-end text-lg-start active " aria-current="page"
+							<a class="nav-link text-end text-lg-start"
 								href="/about-01.html">회사소개</a>
 						</li>
-						<li class="nav-item text-end text-lg-start ms-lg-4">
-							<a class="nav-link" href="/business-introduction.html">사업소개</a>
+						<li class="nav-item active text-end text-lg-start">
+							<a class="nav-link" aria-current="page" href="/business-introduction.html">사업소개</a>
 						</li>
-						<li class="nav-item text-end text-lg-start ms-lg-4">
-							<a class="nav-link" href="/business-introduction-04.html">제품소개</a>
-						</li>
-						<li class="nav-item text-end text-lg-start  ms-lg-4">
+						<li class="nav-item text-end text-lg-start">
 							<a class="nav-link" href="/online-inquiry.html">온라인 문의</a>
 						</li>
-						<li class="nav-item text-end text-lg-start  ms-lg-4">
+						<li class="nav-item text-end text-lg-start">
 							<a class="nav-link" href="/board.html">고객센터</a>
 						</li>
 					</ul>
 					<button class="btn btn-outline-secondary btn-offcanvas d-none d-lg-block" type="button"
 						data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-						<i class="ri-menu-line ri-lg"></i>
+						<i class="ri-menu-line ri-2x"></i>
 					</button>
 				</div>
 			</div>
@@ -76,9 +73,6 @@
 					<a class="nav-link" href="/business-introduction.html">사업소개</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/business-introduction-04.html">제품소개</a>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="/online-inquiry.html">온라인 문의</a>
 				</li>
 				<li class="nav-item">
@@ -90,25 +84,25 @@
 
 	<div class="banner-top business-introduction">
 		<div>
-			<h5>Business Introduction</h5>
-			<h2>사업소개</h2>
+			<h5  class="page-sub-tittle size">Business Introduction</h5>
+			<h2 class="page-tittle size">사업소개</h2>
 		</div>
 	</div>
 
-	<ul class="nav section-navigasi justify-content-center align-items-center">
+	<!-- <ul class="nav section-navigasi justify-content-center align-items-center">
 		<li class="nav-item">
 			<a class="nav-link active" aria-current="page" href="/business-introduction.html">사업소개</a>
 		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="/business-introduction-02.html">사업소개</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="/business-introduction-03.html">사업소개</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="/business-introduction-04.html">사업소개</a>
-		</li>
-	</ul>
+	</ul> -->
+
+	<div class="row justify-content-center text-center mt-100">
+		<div class="col-12">
+			<p class="page-sub-tittle size">Business Introduction</p>
+		</div>
+		<div class="col-12">
+			<h3 class="page-tittle size">사업소개</h3>
+		</div>
+	</div>
 
 	<main class="container container-konten">
 		<div class="tittle-konten text-center">
@@ -128,70 +122,75 @@
 			수 현황</h3>
 
 		<p class="text-end" style="margin-top: 29px;">(단위 : 천 명, %)</p>
-		<table class="table table-bordered align-middle patient-table">
-			<thead class="text-center">
-				<tr class="align-middle">
-					<th scope="col" colspan="2" rowspan="2">구 분</th>
-					<th scope="col" rowspan="2">2018년</th>
-					<th scope="col" rowspan="2">2019년</th>
-					<th scope="col" rowspan="2">2020년</th>
-					<th scope="col" rowspan="2">2021년</th>
-					<th scope="col">2022년</th>
-					<th scope="col" colspan="2">증감률</th>
-				</tr>
-				<tr>
-					<th scope="col">환자 수</th>
-					<th scope="col" style="width: 12%;">연평</th>
-					<th scope="col" style="width: 12%;">’18년 대비 ’22년</th>
-				</tr>
-			</thead>
-			<tbody class="text-center">
-				<tr>
-					<th scope="row" rowspan="4" style="writing-mode: vertical-lr; text-orientation: upright;">임 플 란 트</th>
-					<td>총계</td>
-					<td>579</td>
-					<td>724</td>
-					<td>717</td>
-					<td>759</td>
-					<td>805<br>(100)</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>8.6</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>38.9</td>
-				</tr>
-				<tr>
-					<td>65~69세</td>
-					<td>269</td>
-					<td>336</td>
-					<td>350</td>
-					<td>392</td>
-					<td>430<br>(53.5)</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>12.4</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>59.8</td>
-				</tr>
-				<tr>
-					<td>70~74세</td>
-					<td>171</td>
-					<td>210</td>
-					<td>196</td>
-					<td>194</td>
-					<td>195<br>(24.3)</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>3.3</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>14.0</td>
-				</tr>
-				<tr>
-					<td>75세이상</td>
-					<td>150</td>
-					<td>193</td>
-					<td>183</td>
-					<td>185</td>
-					<td>195<br>(24.2)</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>6.8</td>
-					<td><i class="ri-arrow-up-s-fill ri-xl"></i>30.1</td>
-				</tr>
-			</tbody>
-		</table>
+
+		<div class="table-responsive">	
+			<table class="table table-bordered align-middle patient-table">
+				<thead class="text-center">
+					<tr class="align-middle">
+						<th scope="col" colspan="2" rowspan="2">구 분</th>
+						<th scope="col" rowspan="2">2018년</th>
+						<th scope="col" rowspan="2">2019년</th>
+						<th scope="col" rowspan="2">2020년</th>
+						<th scope="col" rowspan="2">2021년</th>
+						<th scope="col">2022년</th>
+						<th scope="col" colspan="2">증감률</th>
+					</tr>
+					<tr>
+						<th scope="col">환자 수</th>
+						<th scope="col" style="width: 12%;">연평</th>
+						<th scope="col" style="width: 12%;">’18년 대비 ’22년</th>
+					</tr>
+				</thead>
+				<tbody class="text-center">
+					<tr>
+						<th scope="row" rowspan="4" style="writing-mode: vertical-lr; text-orientation: upright;">임 플 란 트
+						</th>
+						<td>총계</td>
+						<td>579</td>
+						<td>724</td>
+						<td>717</td>
+						<td>759</td>
+						<td>805<br>(100)</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>8.6</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>38.9</td>
+					</tr>
+					<tr>
+						<td>65~69세</td>
+						<td>269</td>
+						<td>336</td>
+						<td>350</td>
+						<td>392</td>
+						<td>430<br>(53.5)</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>12.4</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>59.8</td>
+					</tr>
+					<tr>
+						<td>70~74세</td>
+						<td>171</td>
+						<td>210</td>
+						<td>196</td>
+						<td>194</td>
+						<td>195<br>(24.3)</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>3.3</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>14.0</td>
+					</tr>
+					<tr>
+						<td>75세이상</td>
+						<td>150</td>
+						<td>193</td>
+						<td>183</td>
+						<td>185</td>
+						<td>195<br>(24.2)</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>6.8</td>
+						<td><i class="ri-arrow-up-s-fill ri-xl"></i>30.1</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
 		<p class="text-end">출처 : 건강보험 심사평가원</p>
 
-		<div class="row" style="margin-top: 137px; margin-bottom: 203px; padding-bottom: 0;">
+		<div class="row mt-5 mb-5 pb-5" >
 			<div class="col-lg-6">
 				<div id="reoperationRate-container" class="d-flex align-items-start flex-column">
 					<h2>재수술 비율 : 10~20% 내외</h2>
@@ -213,13 +212,13 @@
 						<p class="mb-0" style="font-size: 22px;">년평균 임플란트 시술환자 : 약 700,000명</p>
 					</div>
 					<ul>
-						<li>재시술으로 인한 추가 비용
+						<li>재시술로 인한 추가 비용
 							(저가형 기준) 100 원 * 115,000
 							명</li>
-						<li>재 시술기간 : 3~4개월 </li>
+						<li>재시술기간 : 3~4개월 </li>
 					</ul>
-					<p class="mt-auto mb-0">출처 : Evaluation of implant failure causes : a 19-Year retrospective study: 연세대학교
-						치과 논문</p>
+					<p class="mt-auto mb-0">출처 : Evaluation of implant failure causes : a 19-Year retrospective study: <br>
+						연세대학교 치과 논문</p>
 				</div>
 
 			</div>
@@ -230,7 +229,316 @@
 
 	</main>
 
-	<footer class="container-fluid pb-4">
+
+	<div class="container container-konten-busin02">
+
+
+		<div class="tittle-konten text-center mt-5">
+			<h1>우리는 솔루션을 제공할 수 있습니다</h1>
+		</div>
+
+		<div class="row justify-content-center my-5">
+			<div class="col-lg-8">
+				<img src="/images/divider-tittle-businessIntroduction02.png" class="img-fluid" alt="">
+			</div>
+		</div>
+
+		<div class="row implant-reactivator">
+			<div class="col-lg-3 implantReactivator-left h-100">
+				<div class="text-center">
+					<h4>임플란트실패원인</h4>
+				</div>
+				<div class="mt-4 px-4">
+					<ul class="fs-5">
+						<li>염증 47%</li>
+						<li>골유착 실패 27%</li>
+						<li>고정체 파절 17%</li>
+						<li>주위염증 13%</li>
+						<li>조기부하 13%</li>
+						<li>원인미상 3%</li>
+						<li>과부하</li>
+						<li>숙주반응</li>
+						<li>혼합원인</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-6 implantReactivator-center">
+				<div class="text-center">
+					<h3>Implant ReActivator</h3>
+				</div>
+				<div class="mt-4">
+					<div class="text-center">
+						<img src="/images/image-businessIntroduction02.jpg" class="img-fluid" width="200" alt="">
+					</div>
+					<div class="text-center mt-4">
+						<h4>소형 저온
+							대기압
+							플라즈마처
+							리</h4>
+					</div>
+					<div class="row px-0 mt-4">
+						<div class="col-lg-6 text-center">
+							<div>
+								<p class="mb-3">친수성 표면</p>
+								<div>
+									<p class="mb-0">골유착</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 mt-4 mt-lg-0 text-center">
+							<div>
+								<p class="mb-3">시술 직전</p>
+								<div>
+									<p class="mb-0">멸균</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 implantReactivator-right">
+				<div class="d-flex flex-column align-items-stretch h-100">
+					<div class="text-center">
+						<h4>임플란트 <br>
+							재시술 비율</h4>
+					</div>
+					<div class="text-center mt-4">
+						<h4>재시술 비용 <br>
+							절감</h4>
+					</div>
+					<div class="text-center mt-4">
+						<h4>재시술에 <br>
+							따른 기간 절감</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mt-5 pt-5" >
+			<h3>저온 대기압 플라즈마 처리로 생산직후의 친수성 재확보 (처리시간
+				10초이내)</h3>
+		</div>
+
+		<div class="row" style="margin-top: 80px;">
+			<div class="col-lg-4">
+				<div class="processing-flow-item">
+					<div class="d-flex justify-content-center">
+						<div style="color: #696969;"><i class="ri-lightbulb-flash-line"></i></div>
+						<div class="ms-2">
+							<p class="mb-0 align-middle">초기</p>
+						</div>
+					</div>
+					<div class="d-flex flex-column align-items-center p-4">
+						<h4>초친수 100%</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mt-4 mt-lg-0">
+				<div class="processing-flow-item">
+					<div class="d-flex justify-content-center">
+						<div style="color: #696969;"><i class="ri-instance-line"></i></div>
+						<div class="ms-2">
+							<p class="mb-0 align-middle">운반 / 유통 /저장</p>
+						</div>
+					</div>
+					<div class="d-flex flex-column align-items-center p-4">
+						<h4>친수성 50%</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 mt-4 mt-lg-0">
+				<div class="processing-flow-item">
+					<div class="d-flex justify-content-center">
+						<div style="color: #696969;"><i class="ri-timer-line"></i></div>
+						<div class="ms-2">
+							<p class="mb-0 align-middle">시술직</p>
+						</div>
+					</div>
+					<div class="d-flex flex-column align-items-center p-4">
+						<h4>친수성 5%</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row px-0" style="margin-bottom: 160px;">
+			<div class="col-lg-6 p-4">
+				<div class="row p-4 rounded-3 text-center" style="background-color: #EFF7F6;">
+					<div class="col-lg-6">
+						<img src="/images/machine-image-small.png" class="img-fluid" alt="">
+					</div>
+					<div class="col-lg-6">
+						<h5 class="mt-5 pt-4 fs-4">저온, 대기압 <br>
+							플라즈마 처리</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 p-4">
+				<div class="row p-4 rounded-3 h-100" style="background-color: #EFF7F6;">
+					<div class="col-12">
+						<div class="rounded-3 text-center py-2 bg-white">
+							<p class="mb-0 fw-bold fs-4">시술직</p>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="text-center">
+							<h4 class="fs-3">친수성 99%</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<div class="container container-konten-busin02 mb-0">
+		<div class="tittle-konten text-center" style="margin-top: 121px;">
+			<h1>병원내 교차감염 Issue 발생</h1>
+		</div>
+
+		<div class="border-start border-black" style="margin-top: 71px;">
+			<h4 class="mt-5 text-start ms-lg-2">치과병원의 임플란트 시술은 수술실 같은 완전 멸균실이 아님으로 교차감염의
+				우려가 항상 존재함</h4>
+		</div>
+
+		<div class="row" style="margin-top: 64px;">
+			<!-- <img src="/images/image-proggress-all01.png" class="img-fluid" alt=""> -->
+			<div class="col-lg-12">
+				<picture>
+					<source srcset="/images/image-proggress-all01.png" media="(min-width: 600px)" />
+					<img src="/images/image-proggress-all01_mobile.png" class="img-fluid" alt="">
+				</picture>
+			</div>
+		</div>
+
+		<h1 class="text-center" style="margin-top: 132px;">Solution</h1>
+		<div class="border-start border-black">
+			<h4 class="ms-2 text-start" style="margin-top: 71px;"> 멸균상태의 임플란트의 노출과 접촉을 최소화 하여 교차 감염우려 원천 차단</h4>
+		</div>
+		<div class="row" style="margin-top: 64px; margin-bottom: 253px;">
+			<!-- <img src="/images/image-proggress-all02.png" class="img-fluid" alt=""> -->
+			<picture>
+				<source srcset="/images/image-proggress-all02.png" media="(min-width: 600px)" />
+				<img src="/images/image-proggress-all02_mobile.png" class="img-fluid" alt="">
+			</picture>
+		</div>
+
+		<!-- <div class="d-flex gap-3 mt-5">
+            <div class="flex-fill rounded-3 dark-greyy-bg py-3">
+                <p class="text-center mb-0 fw-bold">개봉 전 임플란트 </p>
+            </div>
+            <div class="flex-fill rounded-3 dark-greyy-bg py-3" style="border: 1px #152E57 border-style: dotted;">
+                <p class="text-center mb-0 fw-bold"><img src="/images/icon-covid.png" width="24" alt="" > 교차 감염 가능성</p>
+            </div>
+            <div class="flex-fill rounded-3 dark-greyy-bg py-3">
+                <p class="text-center mb-0 fw-bold">시술용 핸드피스 장착 </p>
+            </div>
+            <div class="flex-fill rounded-3 dark-greyy-bg py-3">
+                <p class="text-center mb-0 fw-bold">개방된 임플란트 시술공간 </p>
+            </div>
+        </div> -->
+
+	</div>
+
+
+
+
+	<div class="container container-konten-busin03">
+		<div class="section-business-introduction">
+			<div class="container">
+				<div class="row justify-content-center text-center">
+					<div class="col-12">
+						<h3>우리는 솔루션을 제공할 수 있습니다</h3>
+					</div>
+				</div>
+
+				<div class="row justify-content-center mt-5 pt-0 pt-lg-5 mb-5">
+					<div class="col-sm-12">
+						<div class="row justify-content-center">
+							<div class="col-lg-5 text-center">
+								<img src="images/index-product-image.png" alt="product image" class="img-fluid w-100">
+							</div>
+						</div>
+
+						<div class="row justify-content-center bottom-introduction mt-5">
+							<div class="col-md-5">
+								<div>
+									<div class="container-introduction-product mb-4">
+										<img src="images/business-introduction/icon-pulse.svg" alt="icon pulse"
+											class="img-fluid float-start me-3">
+										<h6 class="h6 fw-bold">
+											저온 대기압 플라즈마 처리 - 골 유착성 향상
+										</h6>
+										<h6 class="text-primary fw-bold">
+											친 수성 처리시간 10초이내
+										</h6>
+									</div>
+									<ul>
+										<li>
+											<img src="images/business-introduction/icon-check.svg" alt=""
+												class="img-fluid me-2 float-start pb-5">
+											<h5 class="">
+												저온
+												대기압 플라즈마
+												발생장치 자체 설계 제작
+											</h5>
+											<h5 class="">
+												: 플라즈마 밀도향상을 위한 전극 구조개발 (특허 출원 중)
+											</h5>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-md-5 mt-4 mt-lg-0">
+								<div>
+									<div class="container-introduction-product mb-4">
+										<img src="images/business-introduction/icon-heart.svg" alt="icon pulse"
+											class="img-fluid float-start me-3">
+										<h6 class="h6 fw-bold">
+											임플란트의 노출과 접촉을 최소화 하여
+										</h6>
+										<h6 class="text-primary fw-bold">
+											교차 감염우려 원천 차단
+										</h6>
+									</div>
+									<ul>
+										<li>
+											<img src="images/business-introduction/icon-check.svg" alt=""
+												class="img-fluid me-2 float-start pb-5">
+	
+											<h5 class="">
+												임플란트 핸드 피스 일체형 처리 방안
+											</h5>
+											<h5 class="">
+												: 공용 Gripping 장치 개발 (특허 출원 중)
+											</h5>
+											<h5 class="">
+												: 시술에 최적화된 공간 및 동선 설계 슬림 타워설계
+											</h5>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<footer class="container-fluid pb-4 mt-100">
 		<div class="container pb-2">
 			<div class="row">
 				<div class="col-lg-3">
@@ -240,24 +548,24 @@
 				</div>
 				<div class="col-lg-9">
 					<div class="d-flex flex-column flex-lg-row gap-1 gap-lg-4 text-center text-lg-start">
-						<p>㈜네오플라즈마</p>
-						<p>대표 서기석</p>
-						<a href="tel:+2528602904">사업자번호 252-86-02904</a>
+						<p><b>㈜네오플라즈마</b></p>
+						<p><b>대표</b> 서기석</p>
+						<p><b>사업자번호</b> 252-86-02904</p>
 					</div>
 					<hr class="my-4 my-lg-3">
 					<div class="row">
 						<div class="col-lg-6">
-							<p class="text-center text-lg-start">주소 대구광역시 북구 호암로 51, 3층 ㈜네오플라즈마 </p>
+							<p class="text-center text-lg-start"><b>주소</b> 대구광역시 북구 호암로 51, 3층 ㈜네오플라즈마 </p>
 						</div>
 						<div class="col-lg-6">
 							<div class="d-flex flex-column flex-lg-row contact gap-3 ">
 								<div class="d-flex gap-2 justify-content-center justify-content-lg-start">
 									<span>Tel</span>
-									<p class="mb-0">010-0000-0000</p>
+									<p class="mb-0">010-5533-2462</p>
 								</div>
 								<div class="d-flex gap-2 justify-content-center justify-content-lg-start">
 									<span>Email</span>
-									<p class="mb-0">abcdef@naver.com</p>
+									<p class="mb-0">loveappar@naver.com</p>
 								</div>
 							</div>
 						</div>

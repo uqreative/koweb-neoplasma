@@ -18,24 +18,48 @@ a {
     color: #359084 !important;
 }
 
-.dark-greyy-bg {background-color: #F7F8F9;}
+.page-tittle.size {
+    text-align: center;
+    font-size: 48px !important;
+    font-weight: 700;
+}
+
+.page-sub-tittle.size {
+    text-align: center;
+    font-size: 20px !important;
+    font-weight: 500;
+}
+
+.dark-greyy-bg {
+    background-color: #F7F8F9;
+}
 
 nav.navbar {
     background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
-.nav-item {
+nav.navbar.index {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.navbar-nav.index .nav-item a.nav-link {
+    color: #fff;
+}
+.navbar-nav .nav-item a.nav-link {
     color: #151515;
 }
 
+.navbar-nav li.nav-item:not(:first-child) {
+    margin-left: 120px;
+}
+
 .navbar-nav .nav-item .nav-link {
-    color: #151515;
     font-size: 20px;
     font-weight: 400;
 }
 
-.navbar-nav .nav-item .nav-link.active {
-    font-weight: 600;
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: 800;
 }
 
 .btn-offcanvas {
@@ -43,7 +67,11 @@ nav.navbar {
 }
 
 .offcanvas-header img {
-    height: 64px;
+    height: 58px;
+}
+
+div#offcanvasRight {
+    background-color: rgba(255, 255, 255, 0.89);
 }
 
 .offcanvas-body>.nav>.nav-item {
@@ -58,6 +86,24 @@ nav.navbar {
     color: inherit;
     font-size: 18px;
     line-height: 3;
+}
+
+.carousel-control-next-icon {
+    background-image: url('/images/icon-carouselControl-next.svg');
+    padding: 40px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('/images/icon-carouselControl-prev.svg');
+    padding: 40px;
+}
+
+div#myCarousel>img#scroll-icon {
+    z-index: 9999999;
+    position: absolute;
+    bottom: 50px;
+    left: 48.6%;
+    width: 52px;
 }
 
 .carousel-caption {
@@ -112,6 +158,12 @@ nav.navbar {
     background-image: linear-gradient(to right, #10224B 50%, #fff 50%), url(/images/background-notice.jpg);
 }
 
+.row.online-message-section>.col>a,
+.row.online-message-section>.col>a:visited,
+.row.online-message-section>.col>a:active {
+    color: white !important;
+}
+
 .notice-list {
     background-color: white;
 }
@@ -160,39 +212,47 @@ footer {
     align-items: flex-end;
 
 }
+
 .banner-top.business-introduction {
     background-image: url(/images/top-image_businessIntroduction.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .section-navigasi {
-    height: 81px ;
+    padding: 20px 0;
     border-bottom: 1px solid #E2E2E2;
-    
+
 }
+
 .section-navigasi .vr {
     height: 100px;
 }
+
 .section-navigasi .nav-item .nav-link {
-    padding:   0 70px;
+    padding: 0 70px;
     color: #515151;
     font-size: 20px;
     font-weight: 400;
 }
+
 .section-navigasi .nav-item {
     border-right: 1px solid #B1B1B1;
 }
+
 .section-navigasi .nav-item:last-child {
-    border-right : none;
+    border-right: none;
 }
 
 main.container-konten {
     margin-top: 78px;
 }
+
 main.container-konten .tittle-konten h3 {
     margin-top: 26px;
 }
+
 main.container-konten .tittle-konten h5 {
     margin-top: 26px;
 }
@@ -208,8 +268,9 @@ main.container-konten .green-kontener {
     padding: 35px 0;
     border-radius: 5px;
     color: white;
-    
+
 }
+
 #reoperationRate-container .green-kontener.small {
     margin-top: 33px;
     width: 100%;
@@ -222,7 +283,7 @@ main.container-konten .green-kontener {
     padding: 35px 0;
     border-radius: 5px;
     color: white;
-    
+
 }
 
 table.patient-table p {
@@ -234,15 +295,19 @@ table.patient-table p {
     width: 100%;
     height: 100%;
 }
+
 #reoperationRate-container h2 {
     font-size: 40px;
 }
+
 #reoperationRate-container #item-cek {
     margin-top: 26px;
 }
-#reoperationRate-container #item-cek div  {
+
+#reoperationRate-container #item-cek div {
     margin-right: 16px;
 }
+
 #reoperationRate-container ul {
     font-size: 20px;
     padding-left: 88px;
@@ -283,6 +348,7 @@ table.patient-table p {
     color: white;
     padding: 17px 0px;
 }
+
 .implantReactivator-center>div:nth-child(2)>.row>div>div {
     border-radius: 10px;
     background-color: #E2EBFF;
@@ -294,11 +360,13 @@ table.patient-table p {
     background-color: white;
     padding: 20px 0px;
 }
+
 .implantReactivator-right>div>div:nth-child(1) {
     border-radius: 10px;
     background: #D0EFEB;
     padding: 34px 56px;
 }
+
 .implantReactivator-right>div>div:nth-child(2) {
     border-radius: 10px;
     background: #EFF7F6;
@@ -320,7 +388,8 @@ table.patient-table p {
     border: 1px solid #EDEDED;
     padding: 11px 14px;
 }
-.processing-flow-item>div:nth-child(1){
+
+.processing-flow-item>div:nth-child(1) {
     background-color: #E4E4E4;
     border-radius: 5px;
     padding: 19px 0;
@@ -328,6 +397,20 @@ table.patient-table p {
     font-weight: 500;
     line-height: normal;
 }
+
+.section-way-come .table-address th,
+.section-way-come .table-address td {
+    padding: 33px;
+    font-size: 20px;
+}
+
+.bottom-introduction > .col-md-5 > div {
+    border: 1px solid #ECECEC;
+    padding: 0;
+    border-radius: 12px;
+    height: 100%;
+}
+
 
 
 
@@ -367,18 +450,52 @@ table.patient-table p {
     }
 
     .carousel-caption {
-        bottom: 4rem;
+        bottom: 6rem;
     }
 
-    .nav-item {
+    .carousel-control-next-icon {
+        padding: 20px;
+    }
+
+    .carousel-control-prev-icon {
+        padding: 20px;
+    }
+
+    div#myCarousel>img#scroll-icon {
+        left: 44%;
+    }
+
+    nav.navbar.index {
+        background-color: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    #navbarTop .navbar-nav .nav-item  {
+        border-bottom: 1px solid #e0e0e0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .offcanvas-body .nav .nav-item {
         border-bottom: 1px solid #e0e0e0;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
-    .nav-item:last-child {
+    .offcanvas-body .nav .nav-item:last-child {
         border-bottom: none;
     }
+
+    .navbar-nav li.nav-item:not(:first-child) {
+        margin-left: 0;
+    }
+    .section-navigasi .nav-item {
+        border-right: none;
+        padding: 18px 0;
+    }
+    .section-header img {
+        height: 35vh;
+    }
+    
 
 }
 
