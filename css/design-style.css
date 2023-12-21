@@ -14,11 +14,11 @@ a {
     text-decoration: none;
 }
 
-.hidden-navbar{
+.hidden-navbar {
     visibility: hidden;
- }
+}
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
 }
@@ -54,6 +54,7 @@ nav.navbar.index {
 .navbar-nav.index .nav-item a.nav-link {
     color: #fff;
 }
+
 .navbar-nav .nav-item a.nav-link {
     color: #151515;
 }
@@ -413,7 +414,7 @@ table.patient-table p {
     font-size: 20px;
 }
 
-.bottom-introduction > .col-md-5 > div {
+.bottom-introduction>.col-md-5>div {
     border: 1px solid #ECECEC;
     padding: 0;
     border-radius: 12px;
@@ -478,7 +479,7 @@ table.patient-table p {
         background-color: rgba(255, 255, 255, 0.3) !important;
     }
 
-    #navbarTop .navbar-nav .nav-item  {
+    #navbarTop .navbar-nav .nav-item {
         border-bottom: 1px solid #e0e0e0;
         padding-top: 25px;
         padding-bottom: 25px;
@@ -497,14 +498,16 @@ table.patient-table p {
     .navbar-nav li.nav-item:not(:first-child) {
         margin-left: 0;
     }
+
     .section-navigasi .nav-item {
         border-right: none;
         padding: 18px 0;
     }
+
     .section-header img {
         height: 35vh;
     }
-    
+
 
 }
 
@@ -548,3 +551,220 @@ table.patient-table p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.pagination a {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    color: #939393;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    opacity: 1;
+}
+
+.pagination ol {
+    display: flex;
+    align-items: center;
+}
+
+.pagination ol li {
+    margin: 0 3px;
+}
+
+.pagination ol li.on a {
+    font-weight: 600;
+    color: #222;
+}
+
+.pagination ol li:not(.on) a:hover {
+    opacity: 0.7;
+}
+
+.pagination div[class^="page_control"] a {
+    margin: 0 3px;
+    border: 1px solid #ddd;
+    font-size: 0;
+}
+
+.pagination div[class^="page_control"] a:hover {
+    border-color: #b7b7b7;
+}
+
+.pagination div[class^="page_control"] {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 9px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.pagination .btn_pager::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../images/board/btn_pager.svg) no-repeat 52% 50% / 6px;
+    opacity: 0.4;
+}
+
+.pagination .btn_pager.prev::after {
+    background-position: 50% 50%;
+}
+
+.pagination .btn_pager.prev::after,
+.pagination .btn_end.first::after {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.pagination .btn_end::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../images/board/btn_pager_end.svg) no-repeat 50% 13px / 9.1px;
+    opacity: 0.4;
+}
+
+.pagination .btn_last::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../images/board/btn_pager_end.svg) no-repeat 50% 13px / 9.1px;
+    opacity: 0.4;
+}
+
+.pagination .btn_first::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../../images/board/btn_pager_end.svg) no-repeat 50% 13px / 9.1px;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.pagination a {
+    font-size: 0 !important;
+}
+
+.pagination a {
+    margin: 0 3px;
+    border: 1px solid #ddd;
+    font-size: 0;
+}
+
+/* end pagination */
+
+.pagination {
+    border-top-width: 0;
+}
+
+/* pagination */
+.pagination {
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.pagination>* {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 38px;
+    min-height: 38px;
+    box-sizing: border-box;
+    margin: 2px 3px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    vertical-align: top;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    font-weight: 600;
+    transition: border-color 0.3s ease 0s;
+}
+
+.pagination a[class^="btn_"] {
+    width: 38px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    /* border-color: transparent; */
+    /* background-image: url(../../images/board/btn_pagination.png); */
+    background-repeat: no-repeat;
+    background-size: 152px 76px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0px;
+}
+.pagination a[class^="btn_"]:hover {
+    border-color: #b7b7b7;
+}
+
+.pagination a[class^="btn_"]:hover,
+.pagination a[class^="btn_"]:focus {
+    background-position-y: -38px;
+}
+
+.pagination a.btn_prev {
+    background-position-x: -38px;
+}
+
+.pagination a.btn_next {
+    background-position-x: -76px;
+}
+
+.pagination a.btn_last {
+    background-position-x: -114px;
+}
+
+.pagination > span {
+    border: none;
+    color: #222;
+}
+
+.pagination a:not([class^="btn_"]):hover,
+.pagination a:not([class^="btn_"]):focus {
+    border-color: #cecece;
+    background: #f5f5f5;
+}
+
+.bbsFile .file li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bbsControls ul li a p {
+    margin-bottom: 0px;
+}
+
+.bbsFile .file li>*:not(em) {
+    margin-bottom: 0;
+}
